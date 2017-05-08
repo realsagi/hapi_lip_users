@@ -10,12 +10,13 @@ export default class Users {
         this.db = db;
         this.mongoose = server.plugins['hapi-mongoose'].lib;
 
-        let imagesSchema: any = new this.mongoose.Schema({
+        let usersSchema: any = new this.mongoose.Schema({
             firstName: String,
             lastName: String,
             email: String,
             password: { type: String, hide: true }
         });
-        return this.db.model('users', imagesSchema);
+        usersSchema.plugin(mongooseHidden());
+        return this.db.model('users', usersSchema);
     }
 }
