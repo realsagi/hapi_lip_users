@@ -1,0 +1,30 @@
+{
+  "name": "hapi-users",
+  "version": "1.0.0",
+  "description": "hapi lib api users",
+  "main": "lib/index.js",
+  "repository": {},
+  "license": "MIT",
+  "devDependencies": {
+    "@types/hapi": "^16.0.0",
+    "@types/node": "6",
+    "code": "3.x.x",
+    "hapi": "^16.1.0",
+    "lab": "10.x.x"
+  },
+  "dependencies": {
+    "@types/hapi": "^16.0.6",
+    "@types/mongoose": "^4.7.11",
+    "bcrypt": "^1.0.2",
+    "boom": "^4.2.0",
+    "hapi": "^16.1.1",
+    "hapi-mongoose": "^1.0.1",
+    "joi": "^10.4.1",
+    "mongoose": "^4.9.7",
+    "mongoose-hidden": "^1.3.0"
+  },
+  "scripts": {
+    "test": "lab -t 90 -a code",
+    "test-cov-html": "lab -r html -o coverage.html -a code"
+  }
+}
