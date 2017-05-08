@@ -21,7 +21,7 @@ export default class Routes {
                 handler: this.handles.usersApi,
                 config: {
                     validate: {
-                        payload: validateRequest
+                        payload: new validateRequest()
                     }
                 }
             }
