@@ -1,6 +1,6 @@
 import * as Hapi from "hapi";
 import {IOptions} from "./interface";
-import Users from "../models/users";
+import Users from "./models/users";
 
 export default class Handles {
 

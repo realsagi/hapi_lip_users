@@ -1,7 +1,7 @@
 import * as Hapi from "hapi";
 import {IOptions} from "./interface";
 import Handles from "./handles";
-import validateRequest from "../validate/users-request";
+import validateRequest from "./validate/users-request";
 
 export default class Routes {
     private server: Hapi.Server;
