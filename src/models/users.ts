@@ -1,4 +1,5 @@
 import * as Hapi from "hapi";
+import * as mongooseHidden from 'mongoose-hidden';
 
 export default class Users {
     private server: Hapi.Server;
@@ -13,7 +14,7 @@ export default class Users {
             firstName: String,
             lastName: String,
             email: String,
-            password: String
+            password: { type: String, hide: true }
         });
         return this.db.model('users', imagesSchema);
     }
