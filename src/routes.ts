@@ -18,7 +18,7 @@ export default class Routes {
             {
                 method: 'POST',
                 path: '/api/users',
-                handler: this.handles.users,
+                handler: this.handles.usersApi,
                 config: {
                     validate: {
                         payload: validateRequest
